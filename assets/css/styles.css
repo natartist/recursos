@@ -1,0 +1,366 @@
+
+/* Estilos */
+
+/* Estilos navbar */
+nav {
+    font-family: 'Montserrat', sans-serif;
+}
+nav.navbar.navbar-expand-lg.navbar-light {
+    background-color: #EAB648;
+}
+
+/* Estilos Jumbotrón */
+  .custom-jumbotron {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    background-image: url("/assets/img/jumbotron.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ .jumbotron-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+  }
+ .jumbotron-content p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+
+  }
+ .jumbotron-content .btn {
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #d25a5a;
+    border-color: #d25a5a;
+  }
+
+  /* Estilos sección círculos */
+  .circulo {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%;
+    background-color: #EAB648;
+    color: gray;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    font-family: 'Montserrat', sans-serif; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+/* Estilos para el icono de corazón */
+.circulo i {
+    font-size: 60px; 
+    color: rgb(29, 27, 27); 
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .ver-mas {
+    margin-top: auto;
+    display: flex;
+  justify-content: center;
+  margin-bottom: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+
+  }
+  .ver-mas a {
+    text-decoration: none;
+    color: gray;
+    font-weight: light;
+  }
+  .ver-mas a:hover {
+    color: black;
+  }
+
+  /* Estilos Carrusel */
+ #carrusel {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .carousel-item img {
+    height: 200px; 
+    object-fit: cover;  
+  }
+  .carousel-indicators {
+    bottom: -50px;
+  }
+  .carousel-indicators li {
+    border-radius: 50%;
+    background-color: #373A3C !important;
+    width: 11px !important;
+    height: 11px !important;
+  }
+  .carousel-indicators .active {
+    background-color: #333;
+  }
+/* Media query para hacer desaparecer Carrusel en tamaños pequeños (mobile) */
+  @media (max-width: 768px) {
+    #carrusel {
+      display: none;
+    }
+  }
+
+  /* Estilos Sección Sucursales */
+  .sucursales {
+    background-color: #00B2B2;
+  }
+  .sucursales h2 {
+    font-family: 'Montserrat', sans-serif;
+    color:#fff;
+    margin-top: 40px !important;
+    text-align: center;
+  }
+
+  .rounded-30 {
+    border-radius: 30px;
+  }
+  .sucursales .img-fluid {
+    margin: 30px; /* Puedes ajustar el valor del margen según tu preferencia */
+    max-width: 80%;
+  }
+
+  .card-body p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+  }
+  .card-body ul {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+  }
+ 
+  /*Estilos Cards*/
+  .tarjetas {
+    margin-top: 100px; 
+    margin-bottom: 50px; 
+    border-radius: 50px;  
+  }
+
+  h2.text-center.mb-5 {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+ .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   
+  }
+  .rounded-custom {
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  
+  .card h5 {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .card-text {
+    font-family: 'Poppins', sans-serif; 
+  }
+
+  button.btn.btn-rounded {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: #d25a5a;
+    color:#fff
+  }
+  /* Ajuste para alinear las cards en su altura */
+  .row.row-cols-1.row-cols-md-2.row-cols-lg-4.g-4 {
+    display: flex;
+    flex-wrap: wrap;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  } 
+  .card {
+    flex: 1;
+  }
+  .img-fluid.rounded-30.mt-3 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para selector */
+  .selector {
+    background-color: #F2F2F2;
+  }
+
+  label.form-label {
+    font-family: 'Montserrat', sans-serif;
+  }
+  .form-select {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 14px;
+    color: #3a3c3d;
+    border-radius: 30px;
+  }
+  button.btn.btn-primary.rounded-30 {
+    border-radius: 40px; 
+    border-color: #d25a5a;
+    background-color: #d25a5a;
+    font-family: 'Montserrat', sans-serif;
+  }
+form.select {
+    padding: 30px;
+}
+
+ /* Estilos para la sección llamada a contacto */
+.contact-section {
+    background-image: url('/assets/img/jumbotron.png'); 
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+  }
+  .contact-content {
+    text-align: left;
+    margin: 30px 0;
+  }
+  .contact-subtitle {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+  } 
+  .contact-title {
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+  }
+  .contact-paragraph {
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .contact-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background-color: #d25a5a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px; /* Hace que el botón sea muy redondeado */
+  }
+  
+/* Estilos para formulario de contacto.html */
+.formulario-contacto-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    background-image: url('/assets/img/jumbotron.png');
+  }  
+  .container {
+    position: relative;
+    z-index: 1; 
+  }
+  .formulario-contacto-card {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border-radius: 40px;
+  }
+  .formulario-contacto-card h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .form-control {
+    padding: 10px;
+    border-radius: 30px;
+  }
+  textarea {
+    resize: none; 
+  }
+  h2.mb-4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+  h6.text-start {
+    font-family: 'Montserrat', sans-serif;
+  }
+  input.form-control {
+    font-family: 'Poppins', sans-serif;
+  }
+  .btn-rounded {
+    border-radius: 40px; 
+    border-color: #d25a5a;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 576px) {
+    .formulario-contacto-card {
+      padding: 15px;
+    }
+    .formulario-contacto-card h2 {
+      font-size: 18px;
+    }
+    .form-control {
+      padding: 8px;
+      font-size: 14px;
+    }
+    .btn-rounded {
+      padding: 12px 25px;
+      font-size: 16px;
+    }
+  }
+  
+/* Estilos para el footer */
+.footer {
+    background-color: #f0f0f0; 
+    padding: 20px 0; 
+  }
+  .footer-title {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+  .footer-icons {
+    display: flex;
+  }
+  .footer-icon {
+    font-size: 24px;
+    color: #333;
+    margin-right: 15px;
+  }
+  .footer-icon:last-child {
+    margin-right: 0;
+  }
+  .footer-text {
+    font-size: 14px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Media query para centrar los íconos y el título en pantallas medianas y pequeñas */
+  @media (max-width: 991.98px) {
+    .footer .row .col-lg-6 {
+      text-align: center;
+    }
+  }
+  
+  /* Estilos Carrito de compra */
+  .carrito {
+    background-color: #00B2B2;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  h2.titulo-seccion {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 70px;
+  margin-bottom: 30px;
+  color: #f0f0f0;
+    
+  }
